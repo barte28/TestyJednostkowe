@@ -1,8 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class SzyfryTest {
 
     //Szyfr Cezara
@@ -70,18 +68,18 @@ class SzyfryTest {
 
     //szyfr Kwadratowy
     @Test
-    void szyfrKwadratowyJezeliJestIdealnyKwadrat(){
-        Assertions.assertEquals("",Szyfry.szyfrKwadratowy("",));
+    void szyfrKwadratowyJezeliDLugoscPotegaLiczby(){
+        Assertions.assertEquals("peis",Szyfry.szyfrKwadratem("pies"));
     }
 
     @Test
-    void szyfrKwadratowy(){
-        Assertions.assertEquals("",Szyfry.szyfrKwadratowy("",));
+    void szyfrKwadratowyJezeliDLugoscMniejszaOdPotegaLiczbyBezPustegoWiersza(){
+        Assertions.assertEquals("crayy tn",Szyfry.szyfrKwadratem("cytryna"));
     }
 
     @Test
-    void szyfrKwadratowy(){
-        Assertions.assertEquals("",Szyfry.szyfrKwadratowy("",));
+    void szyfrKwadratowyJezeliDLugoscMniejszaOdPotegaLiczbyZPustymWierszem(){
+        Assertions.assertEquals("prs rat oma gi",Szyfry.szyfrKwadratem("programista"));
     }
 
 }
