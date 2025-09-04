@@ -82,4 +82,8 @@ class SzyfryTest {
         Assertions.assertEquals("prs rat oma gi",Szyfry.szyfrKwadratem("programista"));
     }
 
+    @Test
+    void szyfrKwadratowyPuste(){
+        Assertions.assertEquals("",Szyfry.szyfrKwadratem(""));
+    }
 }
