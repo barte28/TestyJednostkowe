@@ -53,4 +53,9 @@ class KalkulatorTest {
         Assertions.assertTrue(Kalkulator.czyLiczbaPierwsza(17));
     }
 
+    @Test
+    void testPotegaDoZerowej(){
+        Assertions.assertEquals(1,Kalkulator.potega(2,0));
+    }
+
 }

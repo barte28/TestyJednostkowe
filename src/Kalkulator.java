@@ -20,4 +20,8 @@ public class Kalkulator {
 
         return true;
     }
+
+    public static int potega(int podstawa, int wykladnik){
+        return 1;
+    }
 }
